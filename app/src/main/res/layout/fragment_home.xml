@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/contactList_btn"
+        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_rounded_corners"
+        app:backgroundTint="@null"
+        android:layout_height="wrap_content"
+        android:text="Kontaktlar ro'yxati" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_rounded_corners"
+        app:backgroundTint="@null"
+        android:layout_height="wrap_content"
+        android:text="Kontaktlar qo'shish" />
+
+
+</LinearLayout>

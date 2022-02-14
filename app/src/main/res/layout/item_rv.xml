@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="Sanjar Suvonov"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_number"
+        android:text="+99897 007 96 20"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="#D6D6D6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</LinearLayout>
