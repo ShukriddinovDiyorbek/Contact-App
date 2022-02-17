@@ -29,15 +29,16 @@ class ChangeFragment : Fragment() {
         val add2_btn = root.findViewById<Button>(R.id.add2_btn)
 
         add2_btn.setOnClickListener {
-            if (et_name.length()>0 && et_number.length()>0){
-                val name = et_name.text.toString()
+            val s1 = et_name.text.filterNot { it.isWhitespace() }
+            if (!(et_name.text.isEmpty() && et_number.text.isEmpty() && s1.length==0) && s1.length != 0){
+                val name = s1.toString()
                 val number = et_number.text.toString()
                 val contact = Contact(name, number)
                 myDatabaseHelper.addContact(contact)
                 Toast.makeText(context, "Muvafaqqiyatli qo'shildi", Toast.LENGTH_SHORT).show()
                 getActivity()?.onBackPressed();
             } else {
-                Toast.makeText(context, "To'liq to'ldiring", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Kiritishda xatolik", Toast.LENGTH_SHORT).show()
             }
         }
 
